@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>We are champions</title>
+    <link style="text/css" rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+<body>
+    <div class = 'strings'>
+        {% for i in text %}
+        <p class="text"><i>{{ i }}</i></p>
+        {% endfor %}
+        <p class="author"><i>{{ author }}</i></p>
+    </div>
+<p><em>{{ error }}</em></p>
+
+
+</body>
+</html>
